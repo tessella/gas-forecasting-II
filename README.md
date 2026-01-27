@@ -6,4 +6,4 @@
     - **Physics-Aware Normalization:** Replaced window-based scaling with global scaling to preserve absolute thermal signals (global scaling is acceptable for weather data as it is considered stationary).
     - **Global-Soft Weighting:** Pivoted to a globally-weighted Ridge Regression (Temperature $\approx$ 0.1) to utilize the full history while retaining soft regime-switching for structural breaks.
     - **Capturing Non-Linearity:** Computed level 3 signature on features to capture convexity in the data.
-- **Results:** Achieved a **5.96% MAPE** (7-day ahead) and **7.92% MAPE** (14-day ahead), outperforming standard industry benchmarks of [10%](https://www.mdpi.com/1996-1073/14/16/4905) and competing with commercial utility-grade models with a simple dataset.
+- **Results:** Achieved a **5.88% MAPE** (7-day ahead) and **8.30% MAPE** (14-day ahead), outperforming standard industry benchmarks of [10%](https://www.mdpi.com/1996-1073/14/16/4905) and competing with commercial utility-grade models with a simple dataset.
