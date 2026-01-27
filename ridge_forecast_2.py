@@ -69,7 +69,7 @@ def ridge_gas_refined(data_x, data_y, dates, max_horizon, window, sig_depth,
     ])
     
     scaler_x = StandardScaler()
-    data_x_scaled = scaler_x.fit_transform(data_x_augmented) #no lookahead bias as weather 
+    data_x_scaled = scaler_x.fit_transform(data_x_augmented) #no lookahead bias as weather data considered stationary 
     
     data_y = data_y.reshape(-1, 1)
     data_y_log = np.log(data_y)
