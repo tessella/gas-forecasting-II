@@ -83,7 +83,7 @@ def ridge_gas_refined(data_x, data_y, dates, max_horizon, window, sig_depth,
     for delta_t in range(1, max_horizon + 1):
         # A: regime weights 
         w = weights_gas_robust(delta_t, window, temperature, data_x_scaled, time_indices, level)
-        w = w * len(w) # NOTE: no rescaling breaks model, still don't understand this completely
+        w = w * len(w) # for model weights, else too small
         
         # B: build features
         x_features = []
